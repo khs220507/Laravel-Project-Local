@@ -18,5 +18,3 @@ Route::get('/', function () {
 });
 
 Route::get('/weather', [WeatherController::class, 'getWeatherData']);
-
-Route::get('/api/weather', [WeatherController::class, 'getWeatherDataApi']);

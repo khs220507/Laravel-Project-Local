@@ -1,5 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import './assets/tailwind.css'
+import { createApp } from 'vue';
+import WeatherComponent from './components/WeatherComponent.vue';
 
-createApp(App).mount('#app')
+const app = createApp({});
+app.component('weather-component', WeatherComponent);
+app.mount('#app');
