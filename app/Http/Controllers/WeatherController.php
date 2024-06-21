@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Log;
 
 class WeatherController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function getWeatherData()
     {
         // 한국 시간으로 설정
